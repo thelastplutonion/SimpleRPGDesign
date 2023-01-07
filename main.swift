@@ -66,12 +66,12 @@ class Job{
 }
 class Ranger: Job{
     init(){
-        super.init(name: "Ranger", growthRates: [10,10,40,10,10,10,10,10,10,10,10,10])
+        super.init(name: "Ranger", growthRates: [60,45,40,30,30,30,30,30,30,30,30,30])
     }
 }
 class Wizard: Job{
     init(){
-        super.init(name: "Wizard", growthRates: [150,50,10,10,20,20,20,20,10,10,10,10])
+        super.init(name: "Wizard", growthRates: [30,50,10,10,20,20,20,20,10,10,10,10])
         
     }
 }
@@ -193,11 +193,14 @@ class Character{
                 checker -= 100
              }
              checker = 0.0
+          print(self.attributes[i].1)
         }
-        print(self.attributes[0].1)
+              
     }
 
 }
 
 let toz : Character = Character()
-
+toz.LevelUp()
+toz.LevelUp()
+toz.LevelUp()
